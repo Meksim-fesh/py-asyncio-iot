@@ -15,9 +15,9 @@ class HueLightDevice:
         await asyncio.sleep(TIME_TO_SLEEP)
         print("Hue Light connected.")
 
-    def disconnect(self) -> None:
+    async def disconnect(self) -> None:
         print("Disconnecting Hue Light.")
-        time.sleep(TIME_TO_SLEEP)
+        asyncio.sleep(TIME_TO_SLEEP)
         print("Hue Light disconnected.")
 
     async def send_message(
@@ -39,9 +39,9 @@ class SmartSpeakerDevice:
         await asyncio.sleep(TIME_TO_SLEEP)
         print("Smart Speaker connected.")
 
-    def disconnect(self) -> None:
+    async def disconnect(self) -> None:
         print("Disconnecting Smart Speaker.")
-        time.sleep(TIME_TO_SLEEP)
+        asyncio.sleep(TIME_TO_SLEEP)
         print("Smart Speaker disconnected.")
 
     async def send_message(
@@ -63,9 +63,9 @@ class SmartToiletDevice:
         await asyncio.sleep(TIME_TO_SLEEP)
         print("Smart Toilet connected.")
 
-    def disconnect(self) -> None:
+    async def disconnect(self) -> None:
         print("Disconnecting Smart Toilet.")
-        time.sleep(TIME_TO_SLEEP)
+        asyncio.sleep(TIME_TO_SLEEP)
         print("Smart Toilet disconnected.")
 
     async def send_message(
